@@ -27,3 +27,6 @@ validWords = []
 for word in dict:
     if ('j' in word) & ('n' in word) & ('p' in word) & ('r' in word):
         validWords.append(word)
+
+perms = [''.join(p) for p in permutations("jnpr")]
+perms = set(perms)
