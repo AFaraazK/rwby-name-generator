@@ -14,3 +14,16 @@
 # W <-> U, K -> C
 # maybe work backwards? 
 # >> find any word with all of those letters, then arrange the letter. 
+
+# letters = input("4 letters pls ty: ")
+
+from itertools import permutations
+
+dict = []
+for line in open('./words_alpha.txt', 'r').readlines():
+    dict.append(line.strip())
+
+validWords = []
+for word in dict:
+    if ('j' in word) & ('n' in word) & ('p' in word) & ('r' in word):
+        validWords.append(word)
