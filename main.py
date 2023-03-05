@@ -25,8 +25,12 @@ for line in open('./words_alpha.txt', 'r').readlines():
 
 validWords = []
 for word in dict:
-    if ('j' in word) & ('n' in word) & ('p' in word) & ('r' in word):
-        validWords.append(word)
+    if (word[0] == 'j') & ('n' in word) & ('p' in word) & ('r' in word):
+            validWords.append(word)
 
 perms = [''.join(p) for p in permutations("jnpr")]
 perms = set(perms)
+print(validWords)
+
+# find words that begin with each of the 4 letters and divide based on that
+# in interface > bold any of the letters as they appear, user can figure that out
