@@ -65,12 +65,56 @@ body{
     margin: 15px;
 }
 .sitebody .rules{
-    padding-left: 25px;
-    padding-top: 20px;
+    font-size: 16px;
+}
+.sitebody .rules ol{
+    padding-top: 4px;
+    padding-left: 30px;
+    font-size: 16px;
 }
 
 .title{
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+}
+.topgroup{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.radioOne{
+    padding-top: 10px;
+}
+
+.dictionarySelection p:hover{
+    color:purple;
+}
+
+
+[data-title] {
+  position: relative;
+}
+[data-title]:after {
+  content: attr(data-title);
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 3px 5px 7px;
+  white-space:normal;
+  z-index: 99999;
+  visibility: hidden;
+  position: absolute;
+  left: 0%;
+  bottom: 110%;
+  border-radius: 4px 4px 4px 0;
+  font-size: 0.875rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+[data-title]:hover:after {
+  opacity: 1;
+  -webkit-transition: all 0.1s ease 0.3s;
+  transition: all 0.1s ease 0.3s;
+  visibility: visible;
 }
