@@ -92,6 +92,34 @@ body{
     color:purple;
 }
 
+.MembersList{
+    display: flex;
+}
+.membersNames{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.membersNames input{
+    padding: 8px;
+    border-radius: 10px;
+    width:25em;
+}
+.membersNames input:focus{
+    outline: none;
+    border-color: purple;
+    border-width: 3px;
+}
+
+#membersTitle{
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+.teamLeader{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 [data-title] {
   position: relative;
